@@ -1,0 +1,57 @@
+/* User Dropdown Menu Styles */
+.dropdown-account .user-info {
+  padding: 10px 15px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 10px;
+}
+
+.dropdown-account .user-info h5 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.dropdown-account .user-info p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.dropdown-account .user-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-account .user-menu li {
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-account .user-menu li a,
+.dropdown-account .user-menu li button {
+  display: block;
+  padding: 8px 15px;
+  color: #333;
+  text-decoration: none;
+  transition: background-color 0.2s;
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.dropdown-account .user-menu li a:hover,
+.dropdown-account .user-menu li button:hover {
+  background-color: #f5f5f5;
+}
+
+.dropdown-account .user-menu li button.logout-btn {
+  color: #e53935;
+}
+
+.dropdown-account .user-menu li button.logout-btn:hover {
+  background-color: #ffebee;
+}

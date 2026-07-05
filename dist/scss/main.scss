@@ -1,0 +1,28 @@
+@use "sass:meta";
+// Fonts
+@import "../fonts/fonts.css";
+@import "../fonts/font-icons.css";
+
+// CSS
+@import "../css/bootstrap.min.css";
+@import "../css/swiper-bundle.min.css";
+@import "../css/animate.css";
+@import "../css/user-dropdown.css";
+@include meta.load-css("app.scss");
+
+.title-category {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .title-category {
+    font-size: 12px;
+  }
+}
+
+// Language-specific fonts
+@include meta.load-css("_language-fonts.scss");
+.tf-control-sorting-wrapper{
+  margin-top: 30px;
+}

@@ -1,0 +1,86 @@
+// Language-specific font families
+
+// English fonts - Using Sunset Gothic as primary font (with Nunito Sans fallback)
+:lang(en) {
+  font-family: "Sunset Gothic", "Nunito Sans", "Inter", "Segoe UI", "Roboto",
+    "Helvetica Neue", sans-serif;
+}
+
+// Arabic fonts - Using Alexandria as primary font
+:lang(ar) {
+  font-family: "Alexandria", "Cairo", "Tajawal", "Amiri", sans-serif;
+}
+
+// RTL specific adjustments
+[dir="rtl"] {
+  // Add any RTL-specific font adjustments here if needed
+  text-align: right;
+
+  // Adjust some direction-specific elements
+  .icon-arrow-right::before {
+    transform: rotate(180deg);
+    display: inline-block;
+  }
+
+  .icon-arrow-left::before {
+    transform: rotate(180deg);
+    display: inline-block;
+  }
+}
+
+// Ensure correct font weight rendering for Arabic fonts
+:lang(ar) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Alexandria", "Cairo", "Tajawal", "Amiri", sans-serif;
+    font-weight: 700;
+  }
+
+  p,
+  span,
+  div,
+  a {
+    font-family: "Alexandria", "Cairo", "Tajawal", "Amiri", sans-serif;
+    font-weight: 400;
+  }
+
+  button,
+  .btn {
+    font-family: "Alexandria", "Cairo", "Tajawal", "Amiri", sans-serif;
+    font-weight: 500;
+  }
+}
+
+// Ensure correct font weight rendering for English fonts
+:lang(en) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Sunset Gothic", "Nunito Sans", "Inter", "Segoe UI", "Roboto",
+      "Helvetica Neue", sans-serif;
+    font-weight: 700;
+  }
+
+  p,
+  span,
+  div,
+  a {
+    font-family: "Sunset Gothic", "Nunito Sans", "Inter", "Segoe UI", "Roboto",
+      "Helvetica Neue", sans-serif;
+    font-weight: 400;
+  }
+
+  button,
+  .btn {
+    font-family: "Sunset Gothic", "Nunito Sans", "Inter", "Segoe UI", "Roboto",
+      "Helvetica Neue", sans-serif;
+    font-weight: 600;
+  }
+}

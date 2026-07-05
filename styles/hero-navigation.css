@@ -1,0 +1,72 @@
+/* Hero Slider Navigation Buttons - Primary Color */
+.tf-sw-slideshow .swiper-button-next,
+.tf-sw-slideshow .swiper-button-prev {
+  color: var(--main, #029465) !important;
+  background: rgba(255, 255, 255, 0.9);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.tf-sw-slideshow .swiper-button-next:hover,
+.tf-sw-slideshow .swiper-button-prev:hover {
+  background: var(--main, #029465);
+  color: #fff !important;
+  transform: scale(1.1);
+}
+
+.tf-sw-slideshow .swiper-button-next::after,
+.tf-sw-slideshow .swiper-button-prev::after {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.tf-sw-slideshow .swiper-button-disabled {
+  opacity: 0.35;
+  cursor: auto;
+  pointer-events: none;
+}
+
+/* Features section – RTL (Arabic): prevent truncation, proper wrap and alignment */
+.features-rtl .tf-sw-iconbox .swiper-slide {
+  direction: rtl;
+  text-align: right;
+  overflow: visible;
+  min-width: 0;
+}
+.features-rtl .tf-sw-iconbox .tf-icon-box {
+  direction: rtl;
+  width: 100%;
+  min-width: 0;
+}
+.features-rtl .tf-sw-iconbox .tf-icon-box .content {
+  overflow: visible;
+  min-width: 0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+.features-rtl .tf-sw-iconbox .tf-icon-box .content h6,
+.features-rtl .tf-sw-iconbox .tf-icon-box .content p {
+  white-space: normal;
+  overflow: visible;
+  text-overflow: unset;
+}
+.features-rtl .tf-sw-iconbox .swiper-wrapper {
+  direction: rtl;
+}
+.features-rtl .tf-sw-iconbox.swiper-rtl .swiper-slide {
+  text-align: right;
+}
+.features-rtl .tf-sw-iconbox .tf-icon-box .icon-box {
+  flex-shrink: 0;
+}
+.features-rtl .tf-sw-iconbox .tf-icon-box .content.text-end {
+  text-align: inherit;
+}
+.features-rtl .tf-sw-iconbox .tf-icon-box .content.text-end h6,
+.features-rtl .tf-sw-iconbox .tf-icon-box .content.text-end p {
+  text-align: right;
+}
+

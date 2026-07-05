@@ -1,0 +1,11 @@
+/* Hero Slider Component Styles */
+/* Override RTL image rotation to prevent mirroring */
+.rtl .tf-sw-slideshow .wrap-slider .hero-slider-image {
+  transform: none !important;
+}
+
+.hero-slider-image {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
