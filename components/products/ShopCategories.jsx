@@ -6,8 +6,10 @@ import { Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useQuery } from "@tanstack/react-query";
 import { getCategories } from "@/api/categories";
+import { useLocale } from "@/i18n/react";
 
 export default function ShopCategories() {
+  const locale = useLocale();
   const { data: categories } = useQuery({
     queryKey: ["categories"],
     queryFn: getCategories,
@@ -40,18 +42,21 @@ export default function ShopCategories() {
             nextEl: ".snbn12",
           }}
         >
-          {categories?.map((collection, index) => (
-            <SwiperSlide key={index}>
-              <div className="collection-circle hover-img">
-                <Link
-                  href={`/collections/${collection.id}-${collection.name}`}
-                  className="img-style"
-                  prefetch={true}
-                >
+          {categories?.map((collection, index) => {
+            const translation = collection.translations?.find((t) => t.locale === locale) || collection.translations?.[0];
+            const categoryName = translation?.name || collection.name;
+            return (
+              <SwiperSlide key={index}>
+                <div className="collection-circle hover-img">
+                  <Link
+                    href={`/collections/${collection.id}-${categoryName}`}
+                    className="img-style"
+                    prefetch={true}
+                  >
                   <Image
                     className="lazyload"
                     data-src={collection.logo_path || "/images/avatar/user-default.jpg"}
-                    alt={collection.name}
+                    alt={categoryName}
                     src={collection.logo_path || "/images/avatar/user-default.jpg"}
                     width={363}
                     height={363}
@@ -66,19 +71,20 @@ export default function ShopCategories() {
                 <div className="collection-content text-center">
                   <div>
                     <Link
-                      href={`/collections/${collection.id}-${collection.name}`}
+                      href={`/collections/${collection.id}-${categoryName}`}
                       className="cls-title"
                       prefetch={true}
                     >
-                      <h6 className="title-category">{collection.name}</h6>
+                      <h6 className="title-category">{categoryName}</h6>
                       <i className="icon icon-arrowUpRight" />
                     </Link>
                   </div>
                   {/* <div className="count text-secondary">{collection.count}</div> */}
                 </div>
-              </div>
-            </SwiperSlide>
-          ))}
+                </div>
+              </SwiperSlide>
+            );
+          })}
         </Swiper>
         <div className="d-flex d-lg-none sw-pagination-collection sw-dots type-circle justify-content-center spd54" />
       </div>

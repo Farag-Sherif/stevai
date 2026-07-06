@@ -5,8 +5,10 @@ import Pagination from "../common/Pagination";
 import Image from "@/components/common/CompatImage";
 import { useQuery } from "@tanstack/react-query";
 import { Link } from "@/i18n/navigation";
+import { useLocale } from "@/i18n/react";
 
 export default function Collections({ categoryId }) {
+  const locale = useLocale();
   // Fetch subcafes only when categoryId is provided
   const {
     data: subCafes,
@@ -86,8 +88,8 @@ export default function Collections({ categoryId }) {
             ? // Display subcafes when categoryId is provided
             subCafes?.map((collection, index) => {
               const { data: subcategory, items } = collection;
-              // Get the current locale name (defaulting to English, then Arabic)
-              const currentName = subcategory.name;
+              const translation = subcategory.translations?.find((t) => t.locale === locale) || subcategory.translations?.[0];
+              const currentName = translation?.name || subcategory.name;
 
               return (
                 <div
@@ -95,7 +97,7 @@ export default function Collections({ categoryId }) {
                   className="collection-position-2 radius-lg style-3 hover-img"
                 >
                   <Link
-                    href={`/collections/${subcategory.id}-${subcategory.name}`}
+                    href={`/collections/${subcategory.id}-${currentName}`}
                     className="img-style"
                     prefetch={true}
                   >
@@ -119,7 +121,7 @@ export default function Collections({ categoryId }) {
                   </Link>
                   <div className="content">
                     <Link
-                      href={`/collections/${subcategory.id}-${subcategory.name}`}
+                      href={`/collections/${subcategory.id}-${currentName}`}
                       className="cls-btn"
                       prefetch={true}
                     >
@@ -136,8 +138,8 @@ export default function Collections({ categoryId }) {
             })
             : // Display categories when no categoryId is provided
             categories?.map((category) => {
-              // Get the current locale name (defaulting to English, then Arabic)
-              const currentName = category.name;
+              const translation = category.translations?.find((t) => t.locale === locale) || category.translations?.[0];
+              const currentName = translation?.name || category.name;
 
               return (
                 <div
@@ -145,7 +147,7 @@ export default function Collections({ categoryId }) {
                   className="collection-position-2 radius-lg style-3 hover-img"
                 >
                   <Link
-                    href={`/collections/${category.id}-${category.name}`}
+                    href={`/collections/${category.id}-${currentName}`}
                     className="img-style"
                     prefetch={true}
                   >
@@ -169,7 +171,7 @@ export default function Collections({ categoryId }) {
                   </Link>
                   <div className="content">
                     <Link
-                      href={`/collections/${category.id}-${category.name}`}
+                      href={`/collections/${category.id}-${currentName}`}
                       className="cls-btn"
                       prefetch={true}
                     >

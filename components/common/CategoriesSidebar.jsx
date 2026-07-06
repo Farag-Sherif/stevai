@@ -287,6 +287,9 @@ export default function CategoriesSidebar() {
           {categoriesArray.map((category) => {
           const isExpanded = expandedCategories[category.id];
           const subCats = subCategoriesByCategory[category.id] || [];
+          const translation = category.translations?.find((t) => t.locale === locale) || category.translations?.[0];
+          const categoryName = translation?.name || category.name || "";
+          
           // Always show arrow for all categories - let API determine if subcategories exist
           return (
             <div
@@ -312,7 +315,7 @@ export default function CategoriesSidebar() {
                   }}
                 >
                   <Link
-                    href={`/collections/${category.id}-${encodeURIComponent(category.name || "")}`}
+                    href={`/collections/${category.id}-${encodeURIComponent(categoryName)}`}
                     style={{
                       display: "flex",
                       alignItems: "center",
@@ -360,7 +363,7 @@ export default function CategoriesSidebar() {
                         flexShrink: 0,
                       }}
                     />
-                    <span style={{ flex: 1, lineHeight: "1.5" }}>{category.name}</span>
+                    <span style={{ flex: 1, lineHeight: "1.5" }}>{categoryName}</span>
                   </Link>
                   {/* Always show arrow button for all categories */}
                   <button
@@ -428,7 +431,7 @@ export default function CategoriesSidebar() {
                     }}
                   >
                     <div style={{ fontWeight: 600, marginBottom: "6px", color: "var(--main, #029465)", fontSize: "14px" }}>
-                      {category.name}
+                      {categoryName}
                     </div>
                     <div style={{ fontSize: "12px", color: "#666", lineHeight: 1.5 }}>
                       {(() => {

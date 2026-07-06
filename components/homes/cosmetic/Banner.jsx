@@ -7,6 +7,7 @@ import { useQuery } from "@tanstack/react-query";
 import { getSlidersCategories } from "@/api/slider";
 
 export default function Banner() {
+  const locale = useLocale();
   const { data: slidersCategories, isLoading } = useQuery({
     queryKey: ["sliders-categories"],
     queryFn: getSlidersCategories,
@@ -18,13 +19,10 @@ export default function Banner() {
   // Get the first slider item or use fallback data
   const bannerData = slidersCategories?.[0] || {};
 
-  // Fallback values in case data is not available
-  const title =
-    bannerData.title || "Must-Have Beauty Products for Glowing Skin";
-  const description =
-    bannerData.description ||
-    "How to Choose the Perfect Skincare Routine for Your Skin Type";
-  const buttonText = bannerData.button_text || "Buy at a discount - $69.99";
+  const translation = bannerData.translations?.find((t) => t.locale === locale) || bannerData.translations?.[0];
+  const title = translation?.title || bannerData.title || "Must-Have Beauty Products for Glowing Skin";
+  const description = translation?.description || bannerData.description || "How to Choose the Perfect Skincare Routine for Your Skin Type";
+  const buttonText = translation?.button_text || bannerData.button_text || "Buy at a discount - $69.99";
   const buttonUrl = bannerData.button_url || "/shop";
   const backgroundImage =
     bannerData.image_path || "/images/banner/banner-cosmetic.jpg";

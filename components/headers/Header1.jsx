@@ -51,6 +51,7 @@ export default function Header1({ fullWidth = false }) {
                 }
                 width={100}
                 height={100}
+                style={{ objectFit: "contain" }}
                 priority
                 fetchPriority="high"
               />

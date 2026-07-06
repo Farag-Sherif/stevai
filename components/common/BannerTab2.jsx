@@ -38,6 +38,9 @@ export default function BannerTab2({ parentClass = "flat-spacing pt-0" }) {
     content: "",
     items: [],
   };
+  const translation = bannerData.translations?.find((t) => t.locale === locale) || bannerData.translations?.[0];
+  const title = translation?.title || bannerData.title;
+  const content = translation?.content || bannerData.content;
   const displayItems = bannerData.items || [];
   useEffect(() => {
     const offsetX = 20;
@@ -110,10 +113,10 @@ export default function BannerTab2({ parentClass = "flat-spacing pt-0" }) {
             <div className="banner-left">
               <div className="box-title wow fadeInUp">
                 <h3>
-                  {bannerData.title}
+                  {title}
                   <br className="d-none d-lg-block" />
                 </h3>
-                <p>{bannerData.content}</p>
+                <p>{content}</p>
               </div>
               <ul className="tab-banner" role="tablist">
                 {displayItems?.map((item, index) => (
@@ -131,7 +134,10 @@ export default function BannerTab2({ parentClass = "flat-spacing pt-0" }) {
                       data-bs-toggle="tab"
                     >
                       <h5 className="title text-line-clamp-1">
-                        {item.title || item.name || `Product ${item.id}`}
+                        {(() => {
+                          const itemTranslation = item.translations?.find((t) => t.locale === locale) || item.translations?.[0];
+                          return itemTranslation?.name || itemTranslation?.title || item.name || item.title || `Product ${item.id}`;
+                        })()}
                       </h5>
                       <div className="arr-link">
                         <span className="text-btn-uppercase text-more">
@@ -213,7 +219,10 @@ export default function BannerTab2({ parentClass = "flat-spacing pt-0" }) {
                             href={`/product-detail/${item?.id}`}
                             className="text-title link text-line-clamp-1"
                           >
-                            {item?.title || item?.name || `Product ${item?.id}`}
+                            {(() => {
+                              const itemTranslation = item?.translations?.find((t) => t.locale === locale) || item?.translations?.[0];
+                              return itemTranslation?.name || itemTranslation?.title || item?.name || item?.title || `Product ${item?.id}`;
+                            })()}
                           </Link>
                           <div className="price">
                             {pricing.hasDiscount && (

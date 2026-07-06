@@ -1,6 +1,6 @@
 "use client";
 import React, { useCallback } from "react";
-import { useTranslations } from "@/i18n/react";
+import { useTranslations, useLocale } from "@/i18n/react";
 import { Link, usePathname, useRouter } from "@/i18n/navigation";
 import { useQueryClient } from "@tanstack/react-query";
 import { getProducts, getProductsOffers } from "@/api/products";
@@ -11,6 +11,7 @@ export default function Nav() {
   const router = useRouter();
   const queryClient = useQueryClient();
   const t = useTranslations("navigation");
+  const locale = useLocale();
 
   // Prefetch data on hover for instant navigation
   const handleMouseEnter = useCallback((href) => {
@@ -53,9 +54,11 @@ export default function Nav() {
     { name: t("contact"), href: "/contact" },
   ];
 
+  const displayedItems = locale === "ar" ? [...navItems].reverse() : navItems;
+
   return (
     <>
-      {navItems.map((item, index) => (
+      {displayedItems.map((item, index) => (
         <li
           key={index}
           className={`menu-item ${

@@ -99,9 +99,14 @@ export default function Hero() {
           el: ".spd18",
         }}
       >
-        {sliderItems.map((slider, index) => (
-          <SwiperSlide key={slider.id}>
-            <div className="wrap-slider">
+        {sliderItems.map((slider, index) => {
+          const translation = slider.translations?.find((t) => t.locale === locale) || slider.translations?.[0];
+          const title = translation?.title || slider.title;
+          const description = translation?.description || slider.description;
+
+          return (
+            <SwiperSlide key={slider.id}>
+              <div className="wrap-slider">
               <Image
                 alt={`slider-${slider.id}`}
                 src={slider.image_path}
@@ -117,10 +122,10 @@ export default function Hero() {
                   <div className="content-slider">
                     <div className="box-title-slider">
                       <div className="fade-item fade-item-1 heading title-display text-white">
-                        {slider.title}
+                        {title}
                       </div>
                       <p className="fade-item fade-item-2 body-text-1 text-white">
-                        {slider.description}
+                        {description}
                       </p>
                     </div>
                     <div className="fade-item fade-item-3 box-btn-slider">
@@ -139,7 +144,7 @@ export default function Hero() {
               </div>
             </div>
           </SwiperSlide>
-        ))}
+        )})}
       </Swiper>
       <div className="wrap-pagination">
         <div className="container">

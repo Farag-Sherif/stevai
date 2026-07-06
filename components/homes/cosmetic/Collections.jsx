@@ -101,6 +101,8 @@ export default function Collections() {
         <div className="tf-grid-layout tf-col-2 md-col-3 collections-category-cards">
           {categories?.map((category, index) => {
             const subCats = subCategoriesByCategory[category.id] || [];
+            const categoryTranslation = category.translations?.find((t) => t.locale === locale) || category.translations?.[0];
+            const currentName = categoryTranslation?.name || category.name;
             return (
               <div
                 className="collection-position-2 style-6 hover-img wow fadeInUp"
@@ -119,7 +121,7 @@ export default function Collections() {
                 >
                   <Image
                     className="ls-is-cached lazyloaded"
-                    alt={category.name}
+                    alt={currentName}
                     src={category.logo_path || "/images/placeholder-category.jpg"}
                     width={615}
                     height={615}
@@ -130,10 +132,10 @@ export default function Collections() {
                 </Link>
                 <div className="content">
                   <Link
-                    href={`/collections/${category.id}-${category.name}`}
+                    href={`/collections/${category.id}-${currentName}`}
                     className="cls-btn"
                   >
-                    <h6 className="text-custom">{category.name}</h6>
+                    <h6 className="text-custom">{currentName}</h6>
                   </Link>
                 </div>
                 {hoveredCategory === category.id && categoryRefs.current[category.id] && (
@@ -159,7 +161,7 @@ export default function Collections() {
                     }}
                   >
                     <div style={{ fontWeight: 700, marginBottom: "6px", color: "var(--main, #029465)", fontSize: "14px" }}>
-                      {category.name}
+                      {currentName}
                     </div>
                     <div style={{ fontSize: "12px", color: "#666", lineHeight: "1.5" }}>
                       {category.description
@@ -168,7 +170,10 @@ export default function Collections() {
                           ? (locale === "ar" ? "يتضمن: " : "Includes: ") +
                           subCats
                             .slice(0, 4)
-                            .map((sub) => sub.name)
+                            .map((sub) => {
+                              const subTranslation = sub.translations?.find((t) => t.locale === locale) || sub.translations?.[0];
+                              return subTranslation?.name || sub.name;
+                            })
                             .join(locale === "ar" ? "، " : ", ")
                           : locale === "ar"
                             ? "تصفح جميع المنتجات في هذا القسم"

@@ -2,8 +2,10 @@
 
 import React, { useState, useEffect } from "react";
 import CategoriesSidebar from "./CategoriesSidebar";
+import { useLocale } from "@/i18n/react";
 
 export default function CategoriesSidebarToggle() {
+  const locale = useLocale();
   const [isOpen, setIsOpen] = useState(false);
   const showButton = true;
 
@@ -75,7 +77,7 @@ export default function CategoriesSidebarToggle() {
           e.currentTarget.style.transform = "translateY(-50%) rotate(180deg) scale(1)";
           e.currentTarget.style.boxShadow = "0 2px 8px rgba(0,0,0,0.2)";
         }}
-        aria-label="فتح/إغلاق الأقسام"
+        aria-label={locale === "ar" ? "فتح/إغلاق الأقسام" : "Toggle Categories"}
       >
         <span style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "4px" }}>
           <svg
@@ -101,7 +103,11 @@ export default function CategoriesSidebarToggle() {
               </>
             )}
           </svg>
-          <span style={{ fontSize: "12px", lineHeight: "1.3" }}>{isOpen ? "إغلاق" : "الأقسام"}</span>
+          <span style={{ fontSize: "12px", lineHeight: "1.3" }}>
+            {isOpen 
+              ? (locale === "ar" ? "إغلاق" : "Close") 
+              : (locale === "ar" ? "الأقسام" : "Categories")}
+          </span>
         </span>
       </button>
       )}

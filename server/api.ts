@@ -145,7 +145,15 @@ async function fetchApi<T>(endpoint: string, options: FetchOptions = {}): Promis
     }
 
     const base = BASE_URL.replace(/\/+$/g, "");
-    const path = endpoint.startsWith("/") ? endpoint : `/${endpoint}`;
+    let path = endpoint.startsWith("/") ? endpoint : `/${endpoint}`;
+    
+    // Append language to URL so browser caches en/ar separately (Vite/browser fetch doesn't respect Vary header properly)
+    if (path.includes("?")) {
+      path += `&_lang=${locale}`;
+    } else {
+      path += `?_lang=${locale}`;
+    }
+    
     const url = `${base}${path}`;
 
     const headers = new Headers(restOptions.headers || {});
