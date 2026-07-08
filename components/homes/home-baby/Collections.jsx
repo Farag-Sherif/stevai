@@ -11,7 +11,7 @@ export default function Collections() {
     <section className="px_15 pt_20 px_xl-40">
       <Swiper
         className="swiper tf-sw-collection"
-        dir="ltr"
+
         spaceBetween={20}
         breakpoints={{
           0: { slidesPerView: 1 },

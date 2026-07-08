@@ -20,7 +20,7 @@ export default function Collections2() {
             slidesPerView: 1,
           },
         }}
-        dir="ltr"
+
         modules={[Pagination]}
         pagination={{
           clickable: true,

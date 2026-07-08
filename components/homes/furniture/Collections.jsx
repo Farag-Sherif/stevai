@@ -21,7 +21,7 @@ export default function Collections() {
         >
           <Swiper
             slidesPerView={5}
-            dir="ltr"
+
             className="swiper tf-sw-categories"
             spaceBetween={20}
             breakpoints={{

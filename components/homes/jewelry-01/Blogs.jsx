@@ -32,7 +32,7 @@ export default function Blogs() {
               slidesPerView: 3,
             },
           }}
-          dir="ltr"
+
         >
           {blogPosts4.map((item, index) => (
             <SwiperSlide key={index}>

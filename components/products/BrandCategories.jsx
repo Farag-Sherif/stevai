@@ -17,7 +17,7 @@ export default function BrandCategories() {
     <section className="flat-spacing">
       <div className="container">
         <Swiper
-          dir="ltr"
+
           slidesPerView={5}
           spaceBetween={20}
           breakpoints={{

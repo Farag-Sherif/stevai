@@ -85,7 +85,7 @@ export default function ShopGram4() {
             slidesPerView: 2,
           },
         }}
-        dir="ltr"
+
         className="swiper tf-sw-shop-gallery"
       >
         {images.map((item, index) => (

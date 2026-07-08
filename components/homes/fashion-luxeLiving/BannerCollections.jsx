@@ -16,7 +16,7 @@ export default function BannerCollections() {
             992: { slidesPerView: 2, spaceBetween: 30 }, // data-tablet
             0: { slidesPerView: 1, spaceBetween: 15 }, // data-mobile
           }}
-          dir="ltr"
+
         >
           {collections5.map((collection, index) => (
             <SwiperSlide key={index}>

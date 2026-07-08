@@ -18,7 +18,7 @@ export default function Categories() {
         </div>
         <div className="flat-collection-circle">
           <Swiper
-            dir="ltr"
+
             className="swiper tf-sw-recent"
             spaceBetween={15}
             breakpoints={{

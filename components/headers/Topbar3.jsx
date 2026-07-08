@@ -22,7 +22,7 @@ export default function Topbar3() {
                   prevEl: ".snbp2",
                   nextEl: ".snbn2",
                 }}
-                dir="ltr"
+
               >
                 <SwiperSlide className="swiper-slide">
                   <p className="top-bar-text text-line-clamp-1 text-btn-uppercase fw-semibold letter-1">

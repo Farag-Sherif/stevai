@@ -11,7 +11,7 @@ export default function Topbar8() {
           <div className="col-xl-8 col-12 text-center">
             <div className="wrapper-slider-topbar">
               <Swiper
-                dir="ltr"
+
                 className="swiper tf-sw-top_bar"
                 loop
                 modules={[Autoplay, Navigation]}

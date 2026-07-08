@@ -18,7 +18,7 @@ export default function Testimonials() {
           </p>
         </div>
         <Swiper
-          dir="ltr"
+
           className="swiper tf-sw-testimonial"
           slidesPerView={3} // data-preview
           breakpoints={{

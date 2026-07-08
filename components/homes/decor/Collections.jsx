@@ -30,7 +30,7 @@ export default function Collections() {
               prevEl: ".snbp7",
               nextEl: ".snbn7",
             }}
-            dir="ltr"
+
           >
             {collections7.map((collection, index) => (
               <SwiperSlide key={index}>

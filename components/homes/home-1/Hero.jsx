@@ -15,7 +15,7 @@ export default function Hero() {
         loop={true}
         modules={[EffectFade, Autoplay, Pagination]}
         // autoplay={{ delay: 3000 }}
-        dir="ltr"
+
         pagination={{
           clickable: true,
           el: ".spd55",

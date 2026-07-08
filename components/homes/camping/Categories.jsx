@@ -18,7 +18,7 @@ export default function Categories() {
           data-wow-delay="0.1s"
         >
           <Swiper
-            dir="ltr"
+
             slidesPerView={5} // Matches `data-preview="5"`
             spaceBetween={15} // Matches `data-space="15"`
             breakpoints={{

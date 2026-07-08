@@ -16,7 +16,7 @@ export default function Blogs() {
           </p>
         </div>
         <Swiper
-          dir="ltr"
+
           className="swiper tf-sw-categories"
           spaceBetween={30}
           slidesPerView={2}

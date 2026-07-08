@@ -53,7 +53,7 @@ export default function Topbar4() {
               autoplay={{
                 delay: 2000,
               }}
-              dir="ltr"
+
             >
               <SwiperSlide className="swiper-slide">
                 <p className="top-bar-text text-line-clamp-1 text-btn-uppercase fw-semibold letter-1">

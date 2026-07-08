@@ -9,7 +9,7 @@ export default function Collections() {
   return (
     <section>
       <Swiper
-        dir="ltr"
+
         slidesPerView={3} // equivalent to data-preview={3}
         breakpoints={{
           1024: {

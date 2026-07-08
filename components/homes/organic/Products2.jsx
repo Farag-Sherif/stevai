@@ -29,7 +29,7 @@ export default function Products2() {
             clickable: true,
             el: ".spd67",
           }}
-          dir="ltr"
+
         >
           {products22.map((product) => (
             <SwiperSlide key={product.id}>

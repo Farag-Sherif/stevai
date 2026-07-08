@@ -19,7 +19,7 @@ export default function RelatedBlogs() {
               </p>
             </div>
             <Swiper
-              dir="ltr"
+
               className="swiper tf-sw-recent"
               slidesPerView={3} // Equivalent to data-preview={3}
               spaceBetween={15} // Equivalent to data-space={15}

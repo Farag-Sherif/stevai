@@ -43,7 +43,7 @@ export default function Categories() {
                 prevEl: ".snbp14",
                 nextEl: ".snbn14",
               }}
-              dir="ltr"
+
             >
               {categories4.map((category, index) => (
                 <SwiperSlide className="swiper-slide" key={index}>

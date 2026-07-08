@@ -17,7 +17,7 @@ export default function Categories() {
           data-wow-delay="0.1s"
         >
           <Swiper
-            dir="ltr"
+
             className="swiper tf-sw-categories"
             slidesPerView={7} // Equivalent to data-preview
             breakpoints={{

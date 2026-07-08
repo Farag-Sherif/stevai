@@ -29,7 +29,7 @@ export default function Topbar7() {
               delay: 2000,
             }}
             speed={2000}
-            dir="ltr"
+
             className="swiper tf-sw-top_bar"
           >
             <SwiperSlide className="swiper-slide">

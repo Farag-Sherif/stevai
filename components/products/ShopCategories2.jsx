@@ -10,7 +10,7 @@ export default function ShopCategories2() {
     <section className="flat-spacing">
       <div className="container">
         <Swiper
-          dir="ltr"
+
           spaceBetween={15}
           className="swiper tf-sw-categories"
           breakpoints={{

@@ -8,7 +8,7 @@ export default function Hero() {
   return (
     <div className="tf-slideshow slider-collection">
       <Swiper
-        dir="ltr"
+
         className="swiper tf-sw-slideshow"
         spaceBetween={10}
         slidesPerView={3}

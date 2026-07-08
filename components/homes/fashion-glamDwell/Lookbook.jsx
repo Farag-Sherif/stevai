@@ -14,7 +14,7 @@ export default function Lookbook() {
   return (
     <section className="flat-spacing pt-0">
       <Swiper
-        dir="ltr"
+
         style={{
           maxWidth: "100vw",
           maxHeight: "100vh",

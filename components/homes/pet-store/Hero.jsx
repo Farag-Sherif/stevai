@@ -195,7 +195,7 @@ export default function Hero() {
                   clickable: true,
                   el: ".spd72",
                 }}
-                dir="ltr"
+
               >
                 {slides11.map((slide, index) => (
                   <SwiperSlide key={index}>

@@ -9,7 +9,7 @@ export default function Hero() {
   return (
     <section className="tf-slideshow slider-center slider-effect-fade">
       <Swiper
-        dir="ltr"
+
         className="swiper tf-sw-slideshow"
         slidesPerView={1} // data-preview={1}
         breakpoints={{

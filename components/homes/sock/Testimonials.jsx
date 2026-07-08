@@ -20,7 +20,7 @@ export default function Testimonials() {
         <Swiper
           slidesPerView={2}
           spaceBetween={30}
-          dir="ltr"
+
           className="swiper tf-sw-testimonial"
           breakpoints={{
             1024: {

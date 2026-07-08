@@ -23,7 +23,7 @@ export default function Testimonials() {
             prevEl: ".snbp9",
             nextEl: ".snbn9",
           }}
-          dir="ltr"
+
         >
           {testimonials2.map((testimonial) => (
             <SwiperSlide key={testimonial.id}>

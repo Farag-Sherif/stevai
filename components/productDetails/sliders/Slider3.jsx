@@ -108,7 +108,7 @@ export default function Slider3({
   return (
     <div className="thumbs-slider">
       <Swiper
-        dir="ltr"
+
         className="swiper tf-product-media-main"
         id="gallery-swiper-started"
         spaceBetween={10}
@@ -154,7 +154,7 @@ export default function Slider3({
       </Swiper>{" "}
       <Swiper
         className="swiper tf-product-media-thumbs other-image-zoom"
-        dir="ltr"
+
         direction="horizontal"
         spaceBetween={spaceBetween}
         slidesPerView={slidesPerView}

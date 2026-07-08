@@ -22,7 +22,7 @@ export default function Hero() {
           clickable: true,
           el: ".spd31",
         }}
-        dir="ltr"
+
         className="swiper tf-sw-slideshow"
       >
         {sliderData.map((slide, index) => (

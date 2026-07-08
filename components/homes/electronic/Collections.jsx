@@ -26,7 +26,7 @@ export default function Collections() {
               slidesPerView: 1,
             },
           }}
-          dir="ltr"
+
           className="swiper tf-sw-collection"
           modules={[Pagination]}
           pagination={{

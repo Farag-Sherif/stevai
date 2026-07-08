@@ -109,7 +109,7 @@ export default function Testimonials({ parentClass = "flat-spacing" }) {
               clickable: true,
               el: ".spd7",
             }}
-            dir="ltr"
+
           >
             {testimonials.map((testimonial) => (
               <SwiperSlide key={testimonial.id}>

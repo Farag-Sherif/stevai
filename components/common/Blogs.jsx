@@ -35,7 +35,7 @@ export default function Blogs({
               pagination: { clickable: true },
             },
           }}
-          dir="ltr"
+
           className="swiper tf-sw-recent"
           modules={[Pagination]}
           pagination={{

@@ -33,7 +33,7 @@ export default function Products2() {
           </div>
         </div>
         <Swiper
-          dir="ltr"
+
           className="swiper tf-sw-collection wow fadeInUp"
           data-wow-delay="0.1s"
           spaceBetween={30}

@@ -30,7 +30,7 @@ export default function Testimonials() {
               prevEl: ".snbp39",
               nextEl: ".snbn39",
             }}
-            dir="ltr"
+
           >
             {/* item 1 */}
             {testimonials11.map((testimonial) => (

@@ -38,7 +38,7 @@ export default function Categories() {
             clickable: true,
             el: ".spd71",
           }}
-          dir="ltr"
+
           className="swiper tf-sw-categories position-relative"
         >
           {categories6.map((category, index) => (

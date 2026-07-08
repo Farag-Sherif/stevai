@@ -9,7 +9,7 @@ export default function Hero() {
   return (
     <div className="tf-slideshow slider-default slider-effect-fade">
       <Swiper
-        dir="ltr"
+
         className="swiper tf-sw-slideshow"
         modules={[Pagination, Autoplay]}
         autoplay

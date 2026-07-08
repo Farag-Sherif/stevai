@@ -9,7 +9,7 @@ export default function CollectionBanner() {
   return (
     <section className="px_15 px_xl-40 flat-spacing-9 pt-0">
       <Swiper
-        dir="ltr"
+
         className="swiper tf-sw-testimonial"
         spaceBetween={15}
         breakpoints={{

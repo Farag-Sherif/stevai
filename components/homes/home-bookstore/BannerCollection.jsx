@@ -29,7 +29,7 @@ export default function BannerCollection() {
               slidesPerView: 2,
             },
           }}
-          dir="ltr"
+
         >
           {collections15.map((collection) => (
             <SwiperSlide key={collection.id} className="swiper-slide">

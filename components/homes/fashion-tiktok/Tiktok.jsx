@@ -71,7 +71,7 @@ export default function Tiktok() {
           </p>
         </div>
         <Swiper
-          dir="ltr"
+
           className="swiper tf-sw-collection"
           spaceBetween={15}
           breakpoints={{

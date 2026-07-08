@@ -47,7 +47,7 @@ export default function Topbar5({ parentClass = "tf-topbar style-2" }) {
             </ul>
           </div>
           <div className="col-xl-6 col-12 text-center">
-            <Swiper className="swiper tf-sw-top_bar" dir="ltr">
+            <Swiper className="swiper tf-sw-top_bar">
               <SwiperSlide className="swiper-slide">
                 <p className="top-bar-text text-line-clamp-1 text-btn-uppercase fw-semibold letter-1">
                   {t("freeShipping")}

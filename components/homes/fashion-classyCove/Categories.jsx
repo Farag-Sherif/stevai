@@ -11,7 +11,7 @@ export default function Categories() {
         <h3 className="heading">Shop by categories</h3>
       </div>
       <Swiper
-        dir="ltr"
+
         loop={true}
         slidesPerView={6}
         spaceBetween={20}

@@ -15,7 +15,7 @@ export default function Collections2() {
           </Link>
         </div>
         <Swiper
-          dir="ltr"
+
           className="swiper tf-sw-products1"
           data-preview={4}
           data-tablet={4}

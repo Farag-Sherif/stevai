@@ -74,7 +74,7 @@ export default function Banner() {
                   clickable: true,
                   el: ".spd43",
                 }}
-                dir="ltr"
+
                 className="swiper tf-sw-collection"
               >
                 {collections4.map((collection) => (

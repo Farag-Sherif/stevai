@@ -16,7 +16,7 @@ export default function Team() {
           </p>
         </div>
         <Swiper
-          dir="ltr"
+
           spaceBetween={30}
           slidesPerView={4}
           breakpoints={{

@@ -22,7 +22,7 @@ export default function Hero() {
         loop={false} // data-loop
         autoplay={false} // data-auto-play
         centeredSlides={false} // data-centered
-        dir="ltr"
+
         className="swiper tf-sw-slideshow"
         modules={[Pagination, Navigation]}
         pagination={{

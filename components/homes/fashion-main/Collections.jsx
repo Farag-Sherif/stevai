@@ -29,7 +29,7 @@ export default function Collections() {
             clickable: true,
             el: ".spd39",
           }}
-          dir="ltr"
+
         >
           {categories.map((category) => (
             <SwiperSlide key={category.id}>

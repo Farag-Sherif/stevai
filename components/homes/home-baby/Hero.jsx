@@ -10,7 +10,7 @@ export default function Hero() {
     <div className="slider-padding">
       <div className="tf-slideshow slider-default slider-position slider-effect-fade slider-radius-3">
         <Swiper
-          dir="ltr"
+
           className="swiper tf-sw-slideshow"
           slidesPerView={1}
           loop

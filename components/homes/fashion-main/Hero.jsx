@@ -20,7 +20,7 @@ export default function Hero() {
           clickable: true,
           el: ".spd41",
         }}
-        dir="ltr"
+
       >
         {slides3.map((slide) => (
           <SwiperSlide key={slide.id}>

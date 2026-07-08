@@ -8,7 +8,7 @@ export default function Collections() {
   return (
     <section className="space-30">
       <Swiper
-        dir="ltr"
+
         spaceBetween={15} // This replaces data-space
         breakpoints={{
           1200: { slidesPerView: 3 }, // Data-preview

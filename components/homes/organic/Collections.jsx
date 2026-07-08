@@ -10,7 +10,7 @@ export default function Collections() {
     <section className="flat-spacing pt-0">
       <div className="container">
         <Swiper
-          dir="ltr"
+
           spaceBetween={30}
           slidesPerView={3}
           breakpoints={{

@@ -36,7 +36,7 @@ export default function Shopgram() {
               slidesPerView: 5,
             },
           }}
-          dir="ltr"
+
         >
           {product16.map((item, index) => (
             <SwiperSlide key={index}>

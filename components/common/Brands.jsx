@@ -7,7 +7,7 @@ export default function Brands({ parentClass = "flat-spacing-5 line-top" }) {
   return (
     <section className={parentClass}>
       <Swiper
-        dir="ltr"
+
         className="swiper tf-sw-partner sw-auto"
         spaceBetween={50} // Equivalent to data-space={50}
         loop={true} // Equivalent to data-loop="true"

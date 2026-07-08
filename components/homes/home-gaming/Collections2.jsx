@@ -10,7 +10,7 @@ export default function Collections2() {
     <section className="flat-spacing">
       <div className="container">
         <Swiper
-          dir="ltr"
+
           className="swiper tf-sw-recent"
           spaceBetween={15}
           breakpoints={{

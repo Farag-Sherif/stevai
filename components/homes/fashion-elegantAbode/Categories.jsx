@@ -34,7 +34,7 @@ export default function Categories() {
               spaceBetween: 15,
             },
           }}
-          dir="ltr"
+
         >
           {collectionData.map((item) => (
             <SwiperSlide key={item.id}>

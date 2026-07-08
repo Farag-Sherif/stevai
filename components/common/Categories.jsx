@@ -33,7 +33,7 @@ export default function Categories({ parentClass = "flat-spacing pt-0" }) {
                 slidesPerView: 2,
               },
             }}
-            dir="ltr"
+
             spaceBetween={15}
             modules={[Navigation]}
             navigation={{

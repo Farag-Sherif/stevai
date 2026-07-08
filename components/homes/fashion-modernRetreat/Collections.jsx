@@ -9,7 +9,7 @@ export default function Collections() {
   return (
     <section>
       <Swiper
-        dir="ltr"
+
         centeredSlides={true}
         loop={true}
         slidesPerView={4}

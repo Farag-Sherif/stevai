@@ -23,7 +23,7 @@ export default function LookBook() {
         </div>
         <Swiper
           className="swiper tf-sw-lookbook sw-lookbook-wrap"
-          dir="ltr"
+
           spaceBetween={30}
           slidesPerView={2}
           breakpoints={{

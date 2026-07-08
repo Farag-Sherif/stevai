@@ -12,7 +12,7 @@ export default function Collections() {
         <Swiper
           spaceBetween={30}
           className="flat-sw-pagination swiper tf-sw-lookbook"
-          dir="ltr"
+
           slidesPerView={2}
           breakpoints={{
             768: {

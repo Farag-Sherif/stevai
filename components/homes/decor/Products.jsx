@@ -17,7 +17,7 @@ export default function Products() {
 
         <Swiper
           spaceBetween={15}
-          dir="ltr"
+
           className="swiper tf-sw-latest"
           breakpoints={{
             0: { slidesPerView: 2, spaceBetween: 15 },

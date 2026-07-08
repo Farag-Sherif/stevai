@@ -18,7 +18,7 @@ export default function Products2() {
         </div>
       </div>
       <Swiper
-        dir="ltr"
+
         className="swiper tf-sw-categories"
         loop
         centeredSlides

@@ -15,7 +15,7 @@ export default function ShopGram({ parentClass = "" }) {
           </p>
         </div>
         <Swiper
-          dir="ltr"
+
           className="swiper tf-sw-shop-gallery"
           spaceBetween={10}
           breakpoints={{

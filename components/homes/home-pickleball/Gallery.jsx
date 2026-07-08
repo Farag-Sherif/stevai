@@ -9,7 +9,7 @@ export default function Gallery() {
   return (
     <section className="pb-10">
       <Swiper
-        dir="ltr"
+
         className="swiper tf-sw-shop-gallery"
         loop
         spaceBetween={10}

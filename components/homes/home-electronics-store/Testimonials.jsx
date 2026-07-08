@@ -16,7 +16,7 @@ export default function Testimonials() {
           </p>
         </div>
         <Swiper
-          dir="ltr"
+
           className="swiper tf-sw-testimonial wow fadeInUp"
           data-wow-delay="0.1s"
           spaceBetween={15}

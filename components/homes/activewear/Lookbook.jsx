@@ -27,7 +27,7 @@ export default function Lookbook() {
           clickable: true,
           el: ".spd10",
         }}
-        dir="ltr"
+
       >
         {products19.map((item, index) => (
           <SwiperSlide key={index} className="swiper-slide">

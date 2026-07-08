@@ -10,7 +10,7 @@ export default function Hero() {
     <div className="tf-slideshow slider-style2 slider-electronic slider-position slider-effect-fade">
       <Swiper
         effect="fade"
-        dir="ltr"
+
         className="swiper tf-sw-slideshow"
         loop={true}
         autoplay={true}

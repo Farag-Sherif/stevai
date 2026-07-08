@@ -49,7 +49,7 @@ export default function Collections() {
                 prevEl: ".snbp3",
                 nextEl: ".snbn3",
               }}
-              dir="ltr"
+
             >
               {collectionsData3.map((collection, index) => (
                 <SwiperSlide key={index}>

@@ -10,7 +10,7 @@ export default function Testimonials() {
       <div className="container">
         <div className="flat-sw-navigation flat-spacing bg-surface radius-20 px_15 home-gaming-testimonials">
           <Swiper
-            dir="ltr"
+
             className="swiper tf-sw-testimonial"
             spaceBetween={30}
             modules={[Navigation]}

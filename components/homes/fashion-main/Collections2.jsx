@@ -22,7 +22,7 @@ export default function Collections2() {
           clickable: true,
           el: ".spd40",
         }}
-        dir="ltr"
+
       >
         {collections3.map((collection) => (
           <SwiperSlide key={collection.id}>

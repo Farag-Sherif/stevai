@@ -1,5 +1,5 @@
 import { useMutation, useQueryClient } from "@tanstack/react-query";
-import { loginAndSyncCart } from "@/api/auth";
+import { loginAndSyncCart, register } from "@/api/auth";
 
 export const useAuthMutations = () => {
   const queryClient = useQueryClient();
@@ -16,8 +16,18 @@ export const useAuthMutations = () => {
     },
   });
 
+  const registerMutation = useMutation({
+    mutationFn: (formData: FormData) => register(formData),
+    onSuccess: (data) => {
+      if (data?.token) {
+        queryClient.invalidateQueries({ queryKey: ["cart"] });
+        queryClient.invalidateQueries({ queryKey: ["wishlist"] });
+      }
+    },
+  });
+
   return {
-    login: loginMutation.mutateAsync,
-    isLoggingIn: loginMutation.isPending,
+    loginMutation,
+    registerMutation,
   };
 };

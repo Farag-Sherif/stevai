@@ -11,7 +11,7 @@ export default function Hero() {
       <div className="tf-slideshow slider-default slider-effect-fade slider-position slider-nav-sw slider-radius-1">
         <Swiper
           spaceBetween={15}
-          dir="ltr"
+
           className="swiper tf-sw-slideshow"
           breakpoints={{
             768: {

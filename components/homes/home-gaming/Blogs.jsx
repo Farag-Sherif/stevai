@@ -33,7 +33,7 @@ export default function Blogs() {
             clickable: true,
             el: ".spd29",
           }}
-          dir="ltr"
+
         >
           {blogPosts7.map((post) => (
             <SwiperSlide className="swiper-slide" key={post.id}>

@@ -18,7 +18,7 @@ export default function Gallery() {
           <p className="subheading text-secondary">@Stevia</p>
         </div>
         <Swiper
-          dir="ltr"
+
           className="swiper tf-sw-shop-gallery"
           modules={[Pagination]}
           pagination={{

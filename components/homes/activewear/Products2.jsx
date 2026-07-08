@@ -16,7 +16,7 @@ export default function Products2() {
           </p>
         </div>
         <Swiper
-          dir="ltr"
+
           className="swiper tf-sw-recent"
           slidesPerView={4}
           breakpoints={{

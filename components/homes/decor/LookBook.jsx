@@ -40,7 +40,7 @@ export default function LookBook() {
     <section>
       <Swiper
         className="flat-sw-pagination swiper tf-sw-lookbook sw-lookbook-wrap"
-        dir="ltr"
+
         spaceBetween={0}
         slidesPerView={1}
         modules={[Pagination]}

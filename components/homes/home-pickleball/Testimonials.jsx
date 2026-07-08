@@ -18,7 +18,7 @@ export default function Testimonials() {
           </p>
         </div>
         <Swiper
-          dir="ltr"
+
           className="swiper tf-sw-testimonial"
           spaceBetween={15}
           breakpoints={{

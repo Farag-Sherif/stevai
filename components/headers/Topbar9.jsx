@@ -25,7 +25,7 @@ export default function Topbar9() {
           </div>
           <div className="col-xl-6 col-12 text-center">
             <Swiper
-              dir="ltr"
+
               className="swiper tf-sw-top_bar"
               modules={[Autoplay]}
               autoplay={{

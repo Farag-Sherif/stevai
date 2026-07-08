@@ -15,7 +15,7 @@ export default function Hero() {
           clickable: true,
           el: ".spd19",
         }}
-        dir="ltr"
+
         className="swiper tf-sw-slideshow"
       >
         {sliderData2.map((slide, index) => (

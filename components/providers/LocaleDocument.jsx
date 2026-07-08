@@ -10,6 +10,7 @@ export default function LocaleDocument({ locale }) {
 
     try {
       document.documentElement.lang = safeLocale;
+      document.documentElement.dir = safeLocale === "ar" ? "rtl" : "ltr";
     } catch {
       // ignore
     }

@@ -109,7 +109,7 @@
 //               clickable: true,
 //               el: ".spd7",
 //             }}
-//             dir="ltr"
+//
 //           >
 //             {testimonials.map((testimonial) => (
 //               <SwiperSlide key={testimonial.id}>

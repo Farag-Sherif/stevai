@@ -54,7 +54,7 @@ export default function Nav() {
     { name: t("contact"), href: "/contact" },
   ];
 
-  const displayedItems = locale === "ar" ? [...navItems].reverse() : navItems;
+  const displayedItems = navItems;
 
   return (
     <>

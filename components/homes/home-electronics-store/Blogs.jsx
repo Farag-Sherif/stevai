@@ -16,7 +16,7 @@ export default function Blogs() {
           </Link>
         </div>
         <Swiper
-          dir="ltr"
+
           className="swiper tf-sw-collection"
           breakpoints={{
             0: { slidesPerView: 1 },

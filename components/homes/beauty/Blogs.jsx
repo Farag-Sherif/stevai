@@ -15,7 +15,7 @@ export default function Blogs() {
           </p>
         </div>
         <Swiper
-          dir="ltr"
+
           className="swiper tf-sw-recent"
           spaceBetween={15}
           breakpoints={{

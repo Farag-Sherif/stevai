@@ -28,7 +28,7 @@ export default function Testimonials3({
           }}
           modules={[Pagination]}
           pagination={{ el: ".spd445", clickable: true }}
-          dir="ltr"
+
         >
           {testimonials3.map((item, index) => (
             <SwiperSlide key={index}>

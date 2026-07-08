@@ -60,7 +60,7 @@ export default function Products() {
               role="tabpanel"
             >
               <Swiper
-                dir="ltr"
+
                 className="swiper tf-sw-latest"
                 breakpoints={{
                   1200: {

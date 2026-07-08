@@ -8,7 +8,7 @@ export default function Hero() {
   return (
     <div className="tf-slideshow slideshow-effect slider-nav-sw slider-effect-fade bg-surface">
       <Swiper
-        dir="ltr"
+
         className="swiper tf-sw-effect"
         modules={[EffectFade, Pagination, Navigation]}
         effect="fade"

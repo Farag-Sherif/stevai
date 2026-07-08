@@ -8,7 +8,7 @@ export default function Brands() {
   return (
     <section className="flat-spacing-9 pb-0">
       <Swiper
-        dir="ltr"
+
         className="swiper tf-sw-partner sw-auto"
         breakpoints={{
           0: { slidesPerView: "auto" },

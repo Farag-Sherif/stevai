@@ -16,7 +16,7 @@ export default function Products4() {
           </Link>
         </div>
         <Swiper
-          dir="ltr"
+
           className="swiper tf-sw-recent"
           spaceBetween={30}
           breakpoints={{

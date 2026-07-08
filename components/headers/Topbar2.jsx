@@ -32,7 +32,7 @@ export default function Topbar2({
                 autoplay={{ delay: 2000 }}
                 speed={2000}
                 className="swiper tf-sw-top_bar mx-0"
-                dir="ltr"
+
               >
                 {topBarMessages.map((item) => (
                   <SwiperSlide key={item.id}>

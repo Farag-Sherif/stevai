@@ -9,7 +9,7 @@ export default function Hero() {
   return (
     <section className="tf-slideshow slider-style2 slider-effect-fade">
       <Swiper
-        dir="ltr"
+
         className="swiper tf-sw-slideshow"
         spaceBetween={0} // Equivalent to data-space={0}
         modules={[Autoplay, Pagination]}

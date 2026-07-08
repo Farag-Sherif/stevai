@@ -19,7 +19,7 @@ export default function ShopGram() {
           </p>
         </div>
         <Swiper
-          dir="ltr"
+
           spaceBetween={10}
           breakpoints={{
             0: { slidesPerView: 2, spaceBetween: 8 },

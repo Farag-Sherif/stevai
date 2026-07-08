@@ -19,7 +19,7 @@ export default function Testimonials() {
         </div>
 
         <Swiper
-          dir="ltr"
+
           spaceBetween={15}
           slidesPerView={2}
           breakpoints={{

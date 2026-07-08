@@ -31,7 +31,7 @@ export default function Features() {
             clickable: true,
             el: ".spdfspd",
           }}
-          dir="ltr"
+
         >
           {iconBoxes.map((box) => (
             <SwiperSlide key={box.id} className="swiper-slide">

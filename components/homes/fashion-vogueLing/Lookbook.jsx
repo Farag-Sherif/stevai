@@ -85,7 +85,7 @@ export default function Lookbook() {
                 </p>
               </div>
               <Swiper
-                dir="ltr"
+
                 className="swiper tf-sw-lookbook bundle-hover-wrap"
                 spaceBetween={15}
                 slidesPerView={2}

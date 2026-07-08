@@ -22,7 +22,7 @@ export default function Categories() {
             768: { slidesPerView: 3.2, spaceBetween: 20 },
             1024: { slidesPerView: 6.2, spaceBetween: 20 },
           }}
-          dir="ltr"
+
         >
           {categorySlides.map((slide, index) => (
             <SwiperSlide key={index}>

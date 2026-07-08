@@ -33,7 +33,7 @@ export default function Benefits() {
             768: { slidesPerView: 2 },
             0: { slidesPerView: 1 },
           }}
-          dir="ltr"
+
           className="swiper tf-sw-iconbox"
         >
           {benefits.map((benefit, index) => (

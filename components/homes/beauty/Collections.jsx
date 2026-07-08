@@ -8,7 +8,7 @@ export default function Collections() {
     <section id="downSection" className="flat-spacing">
       <div className="container">
         <Swiper
-          dir="ltr"
+
           slidesPerView={3}
           breakpoints={{
             1300: {

@@ -11,7 +11,7 @@ export default function Collections() {
     <section className="flat-spacing">
       <div className="container">
         <Swiper
-          dir="ltr"
+
           spaceBetween={15}
           breakpoints={{
             0: { slidesPerView: 1 },

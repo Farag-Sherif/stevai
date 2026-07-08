@@ -29,7 +29,7 @@ export default function Testimonials() {
             clickable: true,
             el: ".spd38",
           }}
-          dir="ltr"
+
         >
           {testimonials4.map((testimonial, index) => (
             <SwiperSlide key={index}>

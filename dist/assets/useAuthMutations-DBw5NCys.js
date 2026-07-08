@@ -1,1 +1,0 @@
-import{u as s,a as u}from"./query-DSiVOYhP.js";import{t as o}from"./index-DfV0hfNw.js";const c=()=>{const i=s(),n=u({mutationFn:({formData:t,cartItems:e})=>o(t,e),onSuccess:t=>{t?.user&&(i.invalidateQueries({queryKey:["cart"]}),i.invalidateQueries({queryKey:["wishlist"]}))}});return{login:n.mutateAsync,isLoggingIn:n.isPending}};export{c as u};

@@ -18033,8 +18033,8 @@ ul.list-text.type-number {
   right: unset;
 }
 .rtl .nav-account .dropdown-account {
-  left: -50px;
-  right: unset;
+  right: 0 !important;
+  left: auto !important;
 }
 .rtl .tf-product-info-price .compare-at-price {
   margin-left: 16px;

@@ -9,7 +9,7 @@ export default function Features({ parentClass = "flat-spacing" }) {
     <section className={parentClass}>
       <div className="container">
         <Swiper
-          dir="ltr"
+
           className="swiper tf-sw-iconbox"
           spaceBetween={15}
           breakpoints={{

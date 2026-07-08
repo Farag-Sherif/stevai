@@ -90,7 +90,7 @@ export default function Lookbook() {
             }}
             onSwiper={(swiper) => (swiperRef.current = swiper)}
             className="bundle-hover-wrap"
-            dir="ltr"
+
           >
             {products11.map((product, index) => (
               <SwiperSlide key={index}>

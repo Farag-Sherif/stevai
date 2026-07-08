@@ -20,7 +20,7 @@ export default function Collections() {
           data-wow-delay="0.1s"
         >
           <Swiper
-            dir="ltr"
+
             slidesPerView={5}
             spaceBetween={20}
             breakpoints={{

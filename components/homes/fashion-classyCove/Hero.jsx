@@ -10,7 +10,7 @@ export default function Hero() {
     <div className="tf-slideshow slider-default slider-effect-fade">
       <Swiper
         modules={[EffectFade, Pagination]}
-        dir="ltr"
+
         effect="fade"
         slidesPerView={1}
         spaceBetween={0}

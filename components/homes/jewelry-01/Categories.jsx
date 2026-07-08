@@ -33,7 +33,7 @@ export default function Categories() {
                 slidesPerView: 2,
               },
             }}
-            dir="ltr"
+
             className="swiper tf-sw-categories"
             modules={[Navigation, Pagination]}
             navigation={{
