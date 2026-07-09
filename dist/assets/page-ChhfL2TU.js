@@ -1,0 +1,1 @@
+import{s as t}from"./server-B6WolDEp.js";import{r}from"./index-C7lNQw9Y.js";import"./query-DSiVOYhP.js";import"./react-CeLKKlBP.js";const i=async()=>[{locale:"en"},{locale:"ar"}];async function l({params:e}){const{locale:a}=await e;t(a),r(`/${a}/my-account-orders`)}export{l as default,i as generateStaticParams};

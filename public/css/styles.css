@@ -18032,9 +18032,10 @@ ul.list-text.type-number {
   left: 12px;
   right: unset;
 }
-.rtl .nav-account .dropdown-account {
-  right: 0 !important;
-  left: auto !important;
+.rtl .nav-account .dropdown-account,
+.rtl .nav-account .dropdown-login {
+  left: 0 !important;
+  right: unset !important;
 }
 .rtl .tf-product-info-price .compare-at-price {
   margin-left: 16px;

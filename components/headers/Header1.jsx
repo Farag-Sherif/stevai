@@ -134,10 +134,7 @@ export default function Header1({ fullWidth = false }) {
                     />
                   </svg>
                 </button>
-                <div 
-                  className="dropdown-account dropdown-login"
-                  style={locale === "ar" ? { right: 0, left: "auto", pointerEvents: "auto" } : { pointerEvents: "auto" }}
-                >
+                <div className="dropdown-account dropdown-login">
                   {user ? (
                     <div className="sub-top">
                       <div className="user-info">
@@ -161,20 +158,12 @@ export default function Header1({ fullWidth = false }) {
                     </div>
                   ) : (
                     <div className="sub-top">
-                      <Link 
-                        href={`/login`} 
-                        className="tf-btn btn-fill"
-                        onClick={(e) => {
-                           // Ensure it navigates even if iOS hover drops
-                           e.preventDefault();
-                           router.push("/login");
-                        }}
-                      >
-                        <span className="text text-button">{t("login")}</span>
+                      <Link href={`/login`} className="tf-btn btn-reset">
+                        {t("login")}
                       </Link>
-                      <p className="text-center text-secondary-2" style={{ direction: locale === "ar" ? "rtl" : "ltr" }}>
+                      <p className="text-center text-secondary-2">
                         {t("noAccount")}{" "}
-                        <Link href={`/register`} style={{ color: "var(--primary)" }}>{t("register")}</Link>
+                        <Link href={`/register`}>{t("register")}</Link>
                       </p>
                     </div>
                   )}
